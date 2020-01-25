@@ -1,0 +1,73 @@
+@value main-text-color from '../../vars.module.css';
+@value secondary-text-color from '../../vars.module.css';
+
+.profile {
+  width: 300px;
+  margin-bottom: 40px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.avatar {
+  display: block;
+  width: 40%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+
+.name {
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: main-text-color;
+}
+
+.tag {
+  margin-bottom: 10px;
+  color: secondary-text-color;
+}
+
+.location {
+  color: secondary-text-color;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ccc;
+}
+
+.stats li {
+  flex: 0 0 33.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+  list-style-type: none;
+  border-right: 1px solid #ccc;
+}
+
+.stats li:last-of-type {
+  border-right: none;
+}
+
+.label {
+  display: inline-block;
+  margin-bottom: 4px;
+  color: secondary-text-color;
+}
+
+.quantity {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  color: main-text-color;
+}

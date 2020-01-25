@@ -1,0 +1,36 @@
+.transactionHistory {
+  width: 40%;
+  border-collapse: collapse;
+  border-radius: 6px;
+  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.headCell {
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #4ec5f8;
+  border-right: 1px solid #ccc;
+}
+.headCell:last-of-type {
+  border-right: none;
+}
+
+.bodyRow {
+  background-color: #fff;
+}
+.bodyRow:nth-of-type(even) {
+  background-color: #eee;
+}
+
+.bodyRow td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.transactionType::first-letter {
+  text-transform: uppercase;
+}
