@@ -33,12 +33,14 @@ const Profile = ({ user }) => {
   );
 };
 
-Profile.defaultProps = {
-  user: {},
-};
-
 Profile.propTypes = {
-  user: PropTypes.object,
+  user: PropTypes.shape({
+    name: PropTypes.string,
+    tag: PropTypes.string,
+    location: PropTypes.string,
+    avatar: PropTypes.string,
+    stats: PropTypes.object
+  }).isRequired,
 };
 
 export default Profile;

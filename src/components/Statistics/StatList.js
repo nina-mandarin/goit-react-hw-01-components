@@ -18,12 +18,8 @@ const StatList = ({ data }) => {
   );
 };
 
-StatList.defaultProps = {
-  data: [],
-};
-
 StatList.propTypes = {
-  data: PropTypes.array,
+  data: PropTypes.arrayOf(PropTypes.shape({})),
 };
 
 export default StatList;
