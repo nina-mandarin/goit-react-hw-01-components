@@ -19,7 +19,11 @@ const StatList = ({ data }) => {
 };
 
 StatList.propTypes = {
-  data: PropTypes.arrayOf(PropTypes.shape({})),
+  data: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string,
+    label: PropTypes.string,
+    percentage: PropTypes.number
+  }))
 };
 
 export default StatList;
